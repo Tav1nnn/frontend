@@ -1,0 +1,32 @@
+.card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .clicked {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .imagem {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .titulo {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .texto {
+    font-size: 1em;
+    color: #555;
+  }
