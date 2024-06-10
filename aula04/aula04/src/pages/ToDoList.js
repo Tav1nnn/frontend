@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ToDoList.css'
+import { Navigate, useNavigate } from 'react-router-dom';
 
 const ListItem = ({toDoItem, toggleDone}) => {
     console.log(toDoItem);
@@ -42,6 +43,8 @@ const ToDoList = ({ pageTitle }) => {
         setToDoList(updatedList);
     }
 
+    const navagate = useNavigate();
+
     return (
         <div>
             <div className="header">
@@ -55,6 +58,7 @@ const ToDoList = ({ pageTitle }) => {
             <div >
             {toDoList.map((toDoItem) => (<ListItem toDoItem={toDoItem} toggleDone={toggleDone}/>))}
             </div>
+            <button onClick={() => navagate(-1)}>volta</button>
         </div>
     );
 }
