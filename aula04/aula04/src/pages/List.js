@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const list = {
@@ -9,27 +9,20 @@ const list = {
 
 const List = () => {
 
-    const [info, setInfo] = useState()
+    const [pokemon , setPokemon] = useState()
+
+    const getPokemons = useCallback(() => {
+        
+    })
 
     useEffect(() => {
-        setTimeout(() => {
-            setInfo(list)
-        }, 1000)
+        
     }, [])
 
     return (
         
         <div>
-            <Link to="/">
-            IR PARA TODO LIST
-            </Link>
-            {
-                info ? <div>
-                    <p>info.movie</p>
-                    <p>info.serie</p>
-                    <p>info.anime</p>
-                </div> : <div>Carregando</div>
-            }
+            
         </div>        
     );
 }

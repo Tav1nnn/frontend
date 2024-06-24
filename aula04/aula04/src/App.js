@@ -6,6 +6,7 @@ import Timer from './pages/Timer';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Profile from './pages/Profile';
 import List from './pages/List';
+import Aula1706 from './pages/Aula1706';
 
 const router = createBrowserRouter([
   {
@@ -27,7 +28,12 @@ const router = createBrowserRouter([
   {
     path: '/list',
     element: <List></List>
+  },
+  {
+    path: '/aula1706',
+    element: <Aula1706></Aula1706>
   }
+
 ]);
 
 function App() {
